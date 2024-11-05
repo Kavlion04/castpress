@@ -6,6 +6,7 @@
     <title>Castpress</title>
     <link rel="stylesheet" href="./style/font.css">
     <link rel="stylesheet" href="../style/style.css">
+    
    
 </head>
 <body>
@@ -24,8 +25,35 @@
                         <li><a href="#">Donate</a></li>
                     </div>
                     <img src="./assets/icons/search.svg" alt="">
+
                 </ul>
             </div>
+            <div class="menu-mobile">
+                <div class="menu-mobile-header">
+                    <p>
+                        Castpress.
+                    </p>
+                    <img class="close" src="./assets/icons/close.svg" alt="">
+                </div>
+                <nav class="nav-mobile">
+                    <div class="dropdown">
+                        <a href="#">Episodes v</a>
+                        <div class="dropdown-content">
+                            <a href="#">season1</a>
+                            <a href="#">season2</a>
+                            <a href="#">season3</a>
+
+                        </div>
+                    </div>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Donate</a>
+                </nav>
+
+
+                
+            </div>
+            <img class="menu" src="./assets/icons/Menu.svg" alt="">
 
         </div>
 
@@ -203,7 +231,7 @@
                 <p>
                     Sign up now;  get closer to our action.
                 </p>
-                <div>
+                <div class="email">
                     <input type="text" placeholder="Email  adress...">
                     <button>-></button>
                 </div>
@@ -226,6 +254,23 @@
 
         </div>
     </footer>
+    <script>
+
+
+
+        const menu = document.querySelector(".menu");
+        const menuMobile = document.querySelector(".menu-mobile");
+        const close = document.querySelector(".close");
+        menu.addEventListener("click", () => {
+            menuMobile.classList.add("active");
+        })
+        close.addEventListener("click", () => {
+            menuMobile.classList.remove("active");
+        })
+
+
+
+    </script>
     
 </body>
 </html>
