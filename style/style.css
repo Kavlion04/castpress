@@ -515,7 +515,7 @@ input {
     width: 100vw;
     height: 100vh;
     background-color: #FFFFFF;
-    transform: translateY(0vh);
+    transform: translateY(-100vh);
     transition: all 0.3s ease;
     z-index: 10;
 
@@ -529,7 +529,7 @@ input {
 .menu-mobile-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;`
     padding: 20px;
 }
 
@@ -543,7 +543,7 @@ input {
     padding: 20px;
 }
 
-.menu-mobile nav ul li a {
+.menu-mobile nav a {
     color: #979797;
     font-family: "Source Serif 4";
     font-size: 18px;
